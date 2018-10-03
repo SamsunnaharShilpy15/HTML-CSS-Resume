@@ -1,61 +1,117 @@
-/* Your CSS styles go here */
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Document</title>
-</head>
-<body>
+classwork3
+
    
-    <div>
-        <h1 class="details">samsunnahar</h1>
-        <p class="details" id="prof">Machine Learning Engineer</p>
-    </div>
-    <br>
-    <div>
-        <H2 class="header">Education</H2> <br>
-        <TABLE id="tbl">
-            <tr>
-                <td><b>Degree</b></td>
-                <td><b>Institute</b></td>
-                <td><b>Year</b></td>
-            </tr>
-            <tr>
-                <td>SSC</td>
-                <td>Nachol private school</td>
-                <td>2013</td>
-            </tr>
-            
-            <tr>
-                <td>HSC</td>
-                <td>Dhonia private college</td>
-                <td>2015</td>
-            </tr>
-            
-            <tr>
-                <td>BSC</td>
-                <td>IUB</td>
-                <td>2019</td>
-            </tr>
-        </TABLE>    
-    </div>
+
+
+
+.fnt-family{
+ font-family: 'Nunito', sans-serif; 
+}
+
+.details{
+    padding-top: 10%;
+    text-align: center;
+}
+
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+#resume{
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15%;
+    background-color: #e8c8a2;
+}
+#name{
+    font-size: 60px;
+}
+
+#prof{
+    font-size: 24px;
+}
+.social{
+    padding-left: 10px;
+    cursor: pointer;
     
-    <h2 class="header">Skills:</h2>
-    <ul>
-        <li>Python</li>
-        <li>C++</li>
-        <li>Julia</li>
-        <li>Matlab</li>
-    </ul>
-    <div>
-        <form id="frm">
-            <h2 class="header">Say Hello!!</h2>
-            <input id="txt-box" type="text" name="">
-            <input id="btn" type="submit" value="Submit">
-        </form>
-    </div>
-</body>
-</html>
+}
+
+#btn{
+    background-color: #4CAF50;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 35px;
+    width: 70px;
+}
+
+#txt-box{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+#frm{
+    text-align: center;
+}
+
+#top{
+        display: block;
+}
+    
+@media (max-width: 476px) {
+    body {
+     background-image:none;
+     background-color: black;
+    }
+    #soc_txt2::before {
+      content: "\A";
+      white-space: pre;
+    }
+    
+    #name{
+        font-size: 30px;
+    }
+
+    #prof{
+        font-size: 12px;
+        padding-top: 20px;
+    }
+}
+
+
+@media (max-width: 860px) and (min-width: 477px) {
+   #soc_txt2::before {
+      content: "\A";
+      white-space: pre;
+    }
+    #top{
+        padding-bottom: 20px;
+    }
+    #name{
+        font-size: 45px;
+    }
+
+    #prof{
+        font-size: 20px;
+        
+    }
+}
